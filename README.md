@@ -13,7 +13,6 @@ This project contain
     - user
 
 ---
-    
 # The RestFull API
 the api will be accessible via the URN 
 <pre>api/</pre>
@@ -48,7 +47,7 @@ on a specific period between **start** date and **end** date.
 }
 ```
 ### Writing
-####Adding a new user.
+#### Adding a new user.
 <pre>[POST] api/user</pre>
 Body 
 ```javascript
@@ -58,7 +57,7 @@ Body
   team:"Legocity"
 }
 ```
-####Update completely a user.
+#### Update completely a user.
 <pre>[PUT] api/user/:id</pre>
 Body 
 ```javascript
@@ -68,7 +67,7 @@ Body
   team:"Lego-city"
 }
 ```
-####Update partialy a user.
+#### Update partialy a user.
 <pre>[PATCH] api/user/:id</pre>
 Body 
 ```javascript
@@ -76,7 +75,7 @@ Body
   team:"Lego-city"
 }
 ```
-###Deleting
+### Deleting
 ####Delete a specific user
 <pre>[DELETE] api/user/:id</pre>
 ---
@@ -86,7 +85,6 @@ Body
 {
   ObjectId:507f1f77bcf86cd799439012,
   name:"project1",
-  git:"https://github.com/gregonmac/project1/",
   tags:["GUI","pixar","JS","mongo"]
 }
 ```
@@ -94,12 +92,15 @@ Body
 #### Return a bunch of projects, 
 limited to 10, the header contain the url to get the next bunch.
 <pre>[GET] api/project</pre>
+
 #### Return the detail of a specific project.
 <pre>[GET] api/project/:id</pre>
-####Search a bunch of projects, 
+
+#### Search a bunch of projects, 
 limited to 10, filtered by a search value (name, tags), the header contain the url to get the next bunch.
 <pre>[GET] api/project/search/:search</pre>
-####Return the global statistic about a specific project 
+
+#### Return the global statistic about a specific project 
 on a specific period between **start** date and **end** date.
 <pre>[GET] api/project/:id/stats/:start/:end</pre>
 ```javascript
@@ -109,38 +110,55 @@ on a specific period between **start** date and **end** date.
   averageWaitedTime:72 // Average time waited by the user to obtain the booking
 }
 ```
+
 ### Writing
-####Adding a new project.
+#### Adding a new project.
 <pre>[POST] api/project</pre>
 Body 
 ```javascript
 {
   name:"project2",
-  git:"https://github.com/gregonmac/project2/",
   tags:["GUI","pixar","JS","mongo"]
 }
 ```
-####Update completely a project.
+
+#### Update completely a project.
 <pre>[PUT] api/project/:id</pre>
 Body 
 ```javascript
 {
   name:"project3",
-  git:"https://github.com/gregonmac/project3/",
   tags:["API","legocity","JS","mongo"]
 }
 ```
-####Update partialy a project.
+
+#### Update partialy a project.
 <pre>[PATCH] api/project/:id</pre>
 Body 
 ```javascript
 {
-  name:"project-2",
   tags:["GUI","legocity","JS","Mysql"]
 }
 ```
-###Deleting
-####Delete a specific project
+
+### Deleting
+#### Delete a specific project
 <pre>[DELETE] api/project/:id</pre>
+
+## Booking system
+### Add a user in a specific project queue (Book a project for a user)
+<pre>[POST] api/project/:id/queue</pre>
+Body 
+```javascript
+{
+  user:507f1f77bcf86cd799439065
+}
+```
+
+### Remove a user in a specific project queue (Cancel booking demand)
+<pre>[DELETE] api/project/:id/queue/:id</pre>
+
+
+
 
 
