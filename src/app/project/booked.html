@@ -1,0 +1,52 @@
+<div class="row">
+  <div class="col-xs-6 col-md-3"
+       ng-repeat="project in vm.projects | userProject:vm.user | filter : search track by $index"
+       ng-hide="vm.booked && (!project.queue||project.queue.length===0)"
+       ng-mouseover="vm.detail = project"
+       ng-mouseleave="vm.detail=undefined"
+       popover-trigger="'mouseenter'"
+       popover-placement="{{$index<8?'bottom':'top'}}"
+       uib-popover-template="vm.dynamicPopover.templateUrl"
+       popover-title="{{project.name}}">
+    <a class="thumbnail"
+       ng-class="{'booked':vm.isBooked(project),'my-booked':vm.isBookedForMe(project)}"
+       ng-click="vm.toggleBooking(project)">
+      <i class="fa"
+         style="padding-right: 10px"
+         ng-class="project.type.class"></i>
+      {{project.name}}
+      <div>
+        <span class="badge"
+              ng-repeat="item in project.queue">{{item.user|name}}</span>
+      </div>
+    </a>
+  </div>
+  </a>
+</div>
+
+
+<script type="text/ng-template"
+        id="myPopoverTemplate.html">
+  <div class="list-group">
+    <h5 ng-if="!vm.detail.queue || vm.detail.queue.length===0"
+        class="list-group-item-heading">Projet disponible clic sur la tuille pour le bloquer</h5>
+    <a href="#"
+       class="list-group-item"
+       ng-class="$index===0?'active':''"
+       ng-repeat="item in vm.detail.queue">
+      <h5 class="list-group-item-heading">{{item.user}}</h5>
+      <H6 class="list-group-item-text"
+          ng-if="item.give">
+        <i class="fa fa-lock"></i>
+        {{item.give|since}}
+        <i class="fa fa-clock-o"></i>
+        {{item.booked|since}}
+      </H6>
+      <H6 class="list-group-item-text"
+          ng-if="!item.give">
+        <i class="fa fa-clock-o"></i>
+        {{item.booked|since}}
+      </H6>
+    </a>
+  </div>
+</script>

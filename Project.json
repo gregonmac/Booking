@@ -1,0 +1,655 @@
+{
+  "projects": [
+    {
+      "name": "module - loyalty",
+      "type": {
+        "label": "IHM",
+        "class": "fa-html5"
+      }
+    },
+    {
+      "name": "client.api",
+      "type": {
+        "label": "API",
+        "class": "fa-cogs"
+      }
+    },
+    {
+      "name": "sql.targeting",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "module - usecase",
+      "type": {
+        "label": "IHM",
+        "class": "fa-html5"
+      }
+    },
+    {
+      "name": "js.print-wizard",
+      "type": {
+        "label": "JS",
+        "class": "fa-jsfiddle"
+      }
+    },
+    {
+      "name": "oauth.messengeo.net",
+      "type": {
+        "label": "API",
+        "class": "fa-cogs"
+      }
+    },
+    {
+      "name": "js.targeting",
+      "type": {
+        "label": "JS",
+        "class": "fa-jsfiddle"
+      }
+    },
+    {
+      "name": "targeting.messengeo.net",
+      "type": {
+        "label": "API",
+        "class": "fa-cogs"
+      }
+    },
+    {
+      "name": "js.digitaleo-resources",
+      "type": {
+        "label": "JS",
+        "class": "fa-jsfiddle"
+      }
+    },
+    {
+      "name": "statsapi.messengeo.net",
+      "type": {
+        "label": "API",
+        "class": "fa-cogs"
+      }
+    },
+    {
+      "name": "contacts.messengeo.net",
+      "type": {
+        "label": "API",
+        "class": "fa-cogs"
+      }
+    },
+    {
+      "name": "js.common-operation",
+      "type": {
+        "label": "JS",
+        "class": "fa-jsfiddle"
+      }
+    },
+    {
+      "name": "sql.messengeo_queue",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "sql.ecosms",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "sql.satis",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "js.ui-marketing-panel",
+      "type": {
+        "label": "JS",
+        "class": "fa-jsfiddle"
+      }
+    },
+    {
+      "name": "site.digitaleo.com",
+      "type": {
+        "label": "IHM",
+        "class": "fa-html5"
+      }
+    },
+    {
+      "name": "js.targting",
+      "type": {
+        "label": "JS",
+        "class": "fa-jsfiddle"
+      }
+    },
+    {
+      "name": "enduser.messengeo.net",
+      "type": {
+        "label": "API",
+        "class": "fa-cogs"
+      }
+    },
+    {
+      "name": "mongo.module_tablet",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "js.email-editor",
+      "type": {
+        "label": "JS",
+        "class": "fa-jsfiddle"
+      }
+    },
+    {
+      "name": "js.user-config",
+      "type": {
+        "label": "JS",
+        "class": "fa-jsfiddle"
+      }
+    },
+    {
+      "name": "lib.digitaleo.com",
+      "type": {
+        "label": "IHM",
+        "class": "fa-html5"
+      }
+    },
+    {
+      "name": "www.satisfeo.net",
+      "type": {
+        "label": "IHM",
+        "class": "fa-html5"
+      }
+    },
+    {
+      "name": "sql.simulator",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "js.common-html",
+      "type": {
+        "label": "JS",
+        "class": "fa-jsfiddle"
+      }
+    },
+    {
+      "name": "pepettes.messengeo.net",
+      "type": {
+        "label": "API",
+        "class": "fa-cogs"
+      }
+    },
+    {
+      "name": "module - tablet",
+      "type": {
+        "label": "IHM",
+        "class": "fa-html5"
+      }
+    },
+    {
+      "name": "mongo.tablet",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "editor.messengeo.net",
+      "type": {
+        "label": "API",
+        "class": "fa-cogs"
+      }
+    },
+    {
+      "name": "api.messengeo.net",
+      "type": {
+        "label": "API",
+        "class": "fa-cogs"
+      }
+    },
+    {
+      "name": "js.usecase",
+      "type": {
+        "label": "JS",
+        "class": "fa-jsfiddle"
+      }
+    },
+    {
+      "name": "drinks.messengeo.net",
+      "type": {
+        "label": "API",
+        "class": "fa-cogs"
+      }
+    },
+    {
+      "name": "js.print-editor",
+      "type": {
+        "label": "JS",
+        "class": "fa-jsfiddle"
+      }
+    },
+    {
+      "name": "js.template-library",
+      "type": {
+        "label": "JS",
+        "class": "fa-jsfiddle"
+      }
+    },
+    {
+      "name": "module - print",
+      "type": {
+        "label": "IHM",
+        "class": "fa-html5"
+      }
+    },
+    {
+      "name": "sms.messengeo.net",
+      "type": {
+        "label": "API",
+        "class": "fa-cogs"
+      }
+    },
+    {
+      "name": "ft.messengeo.net",
+      "type": {
+        "label": "API",
+        "class": "fa-cogs"
+      }
+    },
+    {
+      "name": "tablet.messengeo.net",
+      "type": {
+        "label": "API",
+        "class": "fa-cogs"
+      }
+    },
+    {
+      "name": "libeo",
+      "type": {
+        "label": "IHM",
+        "class": "fa-html5"
+      }
+    },
+    {
+      "name": "app.digitaleo.com",
+      "type": {
+        "label": "IHM",
+        "class": "fa-html5"
+      }
+    },
+    {
+      "name": "js.content-library",
+      "type": {
+        "label": "JS",
+        "class": "fa-jsfiddle"
+      }
+    },
+    {
+      "name": "sql.drinks",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "mobile.messengeo.net",
+      "type": {
+        "label": "API",
+        "class": "fa-cogs"
+      }
+    },
+    {
+      "name": "scania.messengeo.net",
+      "type": {
+        "label": "API",
+        "class": "fa-cogs"
+      }
+    },
+    {
+      "name": "stats.messengeo.net",
+      "type": {
+        "label": "API",
+        "class": "fa-cogs"
+      }
+    },
+    {
+      "name": "mongo.shortener",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "module - assistant marketing",
+      "type": {
+        "label": "IHM",
+        "class": "fa-html5"
+      }
+    },
+    {
+      "name": "js.store-locator",
+      "type": {
+        "label": "JS",
+        "class": "fa-jsfiddle"
+      }
+    },
+    {
+      "name": "sql.site",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "web-branding.digitaleo.com",
+      "type": {
+        "label": "IHM",
+        "class": "fa-html5"
+      }
+    },
+    {
+      "name": "shortener.messengeo.net",
+      "type": {
+        "label": "API",
+        "class": "fa-cogs"
+      }
+    },
+    {
+      "name": "module - billing",
+      "type": {
+        "label": "IHM",
+        "class": "fa-html5"
+      }
+    },
+    {
+      "name": "sql.messengeo_redirector",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "js.billing",
+      "type": {
+        "label": "JS",
+        "class": "fa-jsfiddle"
+      }
+    },
+    {
+      "name": "sql.mobile",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "sql.messengeo",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "zelda.messengeo.net",
+      "type": {
+        "label": "API",
+        "class": "fa-cogs"
+      }
+    },
+    {
+      "name": "site.messengeo.net",
+      "type": {
+        "label": "API",
+        "class": "fa-cogs"
+      }
+    },
+    {
+      "name": "mongo.baseo",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "health.messengeo.net",
+      "type": {
+        "label": "API",
+        "class": "fa-cogs"
+      }
+    },
+    {
+      "name": "js.contact",
+      "type": {
+        "label": "JS",
+        "class": "fa-jsfiddle"
+      }
+    },
+    {
+      "name": "module - marketingmanager",
+      "type": {
+        "label": "IHM",
+        "class": "fa-html5"
+      }
+    },
+    {
+      "name": "sql.processus",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "js.sms-editor",
+      "type": {
+        "label": "JS",
+        "class": "fa-jsfiddle"
+      }
+    },
+    {
+      "name": "mongo.oauth",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "slbeo.digitaleo.com",
+      "type": {
+        "label": "IHM",
+        "class": "fa-html5"
+      }
+    },
+    {
+      "name": "sql.pepettes",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "sql.marketeo_baseo",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "mongo.module_loyalty",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "js.voicemail-editor",
+      "type": {
+        "label": "JS",
+        "class": "fa-jsfiddle"
+      }
+    },
+    {
+      "name": "sql.baseo",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "module - notification",
+      "type": {
+        "label": "IHM",
+        "class": "fa-html5"
+      }
+    },
+    {
+      "name": "module - account",
+      "type": {
+        "label": "IHM",
+        "class": "fa-html5"
+      }
+    },
+    {
+      "name": "module - Black Orifice",
+      "type": {
+        "label": "IHM",
+        "class": "fa-html5"
+      }
+    },
+    {
+      "name": "pgsql.tablet",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "ftp.messengeo.net",
+      "type": {
+        "label": "API",
+        "class": "fa-cogs"
+      }
+    },
+    {
+      "name": "js.history",
+      "type": {
+        "label": "JS",
+        "class": "fa-jsfiddle"
+      }
+    },
+    {
+      "name": "module - contact",
+      "type": {
+        "label": "IHM",
+        "class": "fa-html5"
+      }
+    },
+    {
+      "name": "js.smartpage-editor",
+      "type": {
+        "label": "JS",
+        "class": "fa-jsfiddle"
+      }
+    },
+    {
+      "name": "baseo.messengeo.net",
+      "type": {
+        "label": "API",
+        "class": "fa-cogs"
+      }
+    },
+    {
+      "name": "module - clienteling.digitaleo.com",
+      "type": {
+        "label": "IHM",
+        "class": "fa-html5"
+      }
+    },
+    {
+      "name": "sql.contacts",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "sql.stats",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "pepettes.digitaleo.com",
+      "type": {
+        "label": "IHM",
+        "class": "fa-html5"
+      }
+    },
+    {
+      "name": "image.messengeo.net",
+      "type": {
+        "label": "API",
+        "class": "fa-cogs"
+      }
+    },
+    {
+      "name": "mongo.module_collect",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "sql.lsms",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "sql.marketeo_editor",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "js.digitaleo-toolkit",
+      "type": {
+        "label": "JS",
+        "class": "fa-jsfiddle"
+      }
+    },
+    {
+      "name": "sql.marketeo_cmpeo",
+      "type": {
+        "label": "DB",
+        "class": "fa-database"
+      }
+    },
+    {
+      "name": "module - marketing",
+      "type": {
+        "label": "IHM",
+        "class": "fa-html5"
+      }
+    },
+    {
+      "name": "js.generic-wizard",
+      "type": {
+        "label": "JS",
+        "class": "fa-jsfiddle"
+      }
+    }
+  ]
+}

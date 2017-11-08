@@ -1,0 +1,29 @@
+{
+  "name": "Booking",
+  "homepage": "https://github.com/gregonmac/Booking",
+  "authors": [
+    "gregonmac@gmail.com"
+  ],
+  "description": "Projects booking for collaboratif dev team",
+  "main": "src/index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11.3",
+    "bootstrap": "3.3.5",
+    "angular": "angularjs#~1.5.0",
+    "angular-route": "~1.5.0",
+    "firebase": "~3.0.3",
+    "angularfire": "~2.0.1",
+    "font-awesome": "fontawesome#^4.7.0",
+    "moment": "^2.16.0",
+    "angular-bootstrap": "2.2.0"
+  }
+}

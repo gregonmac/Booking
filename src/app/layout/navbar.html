@@ -1,0 +1,62 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#navbar"
+              aria-expanded="false"
+              aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a
+         class="navbar-brand"
+         href="#/">
+        <i class="fa fa-book"></i>
+        Booking
+      </a>
+    </div>
+    <div id="navbar"
+         class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li ng-if="vm.isLoggedIn()"
+            ng-class="{'active':vm.isCurrent('/project/booking')}">
+          <a href="#/project/booking">
+            <i class="fa fa-database"></i>
+            Bloquer un projet
+          </a>
+        </li>
+        <li ng-if="vm.isLoggedIn()"
+            ng-class="{'active':vm.isCurrent('/project/booked')}">
+          <a href="#/project/booked">
+            <i class="fa fa-database"></i>
+            Mes reservations
+          </a>
+        </li>
+        <li ng-if="vm.isLoggedIn() && vm.isAdmin()"
+            ng-class="{'active':vm.isCurrent('/project/management')}">
+          <a href="#/project/management">
+            <i class="fa fa-database"></i>
+            Projets
+          </a>
+        </li>
+        <li ng-if="vm.isLoggedIn()">
+          <a href=""
+             ng-click="vm.logout()">
+            <i class="fa fa-sign-out"></i>
+            Deconnexion
+          </a>
+        </li>
+        <li ng-if="!vm.isLoggedIn()">
+          <a href="#/login">
+            <i class="fa fa-sign-in"></i>
+            Connexion
+          </a>
+        </li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>

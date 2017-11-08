@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en"
+      ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <title>Booking</title>
+  <!--Bootstrap latest compiled and minified CSS-->
+  <link rel="stylesheet"
+        href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!--Optional theme-->
+  <link rel="stylesheet"
+        href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+  <!--Custom CSS-->
+  <link rel="shortcut icon" href="https://booking-ce0de.firebaseapp.com/favicon.ico">
+  <link rel="stylesheet"
+        href="content/styles/app.css"/>
+  <link rel="stylesheet"
+        href="bower_components/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+
+<!--navbar directive that stays at the top of every page-->
+<gan-navbar></gan-navbar>
+
+<!--Main content that changes based on route-->
+<div ng-view
+     class="container"></div>
+
+<!--Third-party JS-->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="bower_components/firebase/firebase.js"></script>
+<script src="bower_components/moment/min/moment-with-locales.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script>
+    // Initialize Firebase. Use your own config values here. This is just a sample.
+    // You can copy and paste your config values by following the instructions at
+    // https://firebase.google.com/docs/web/setup#add_firebase_to_your_app.
+    var config = {
+        apiKey: "AIzaSyBtRdzvfuICXEHBOzxChVnqwuMsUF-5Dj4",
+        authDomain: "booking-ce0de.firebaseapp.com",
+        databaseURL: "https://booking-ce0de.firebaseio.com",
+        storageBucket: "booking-ce0de.appspot.com",
+    };
+    firebase.initializeApp(config);
+</script>
+<!--<script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>-->
+<script src="bower_components/angularfire/dist/angularfire.min.js"></script>
+
+<!--main app module-->
+<script src="app/app.module.js"></script>
+
+<!--auth module-->
+<script src="app/auth/auth.js"></script>
+<script src="app/auth/config.route.js"></script>
+<script src="app/auth/auth.ctl.js"></script>
+<script src="app/auth/auth.srv.js"></script>
+<script src="app/auth/authForm.dir.js"></script>
+<script src="app/auth/registerForm.dir.js"></script>
+
+<!--landing module-->
+<script src="app/landing/landing.js"></script>
+<script src="app/landing/config.route.js"></script>
+
+<!--booking.project module-->
+<script src="app/project/project.js"></script>
+<!--booking.user module-->
+<script src="app/user/user.js"></script>
+
+<!--core module-->
+<script src="app/core/core.js"></script>
+<script src="app/core/constants.js"></script>
+<script src="app/core/firebaseData.srv.js"></script>
+<script src="app/core/party.srv.js"></script>
+<script src="app/core/project.srv.js"></script>
+<script src="app/core/user.srv.js"></script>
+<script src="app/core/textMessage.srv.js"></script>
+
+<!--layout module-->
+<script src="app/layout/layout.js"></script>
+<script src="app/layout/navbar.dir.js"></script>
+
+</body>
+</html>

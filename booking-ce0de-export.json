@@ -1,0 +1,174 @@
+{
+  "logs" : {
+    "xdwpzUX28LO1aFs6GeXpHV1dJ1I2" : {
+      "2016-10" : {
+        "3" : {
+          "18:25:41 571" : "Release project:js.html-editor",
+          "18:25:42 217" : "Book project:js.html-editor",
+          "18:28:51 614" : "Release project:js.html-editor",
+          "18:28:52 092" : "Book project:js.html-editor",
+          "18:29:55 828" : "Release project:js.html-editor",
+          "18:29:57 860" : "Book project:js.html-editor",
+          "18:30:02 496" : "Release project:js.html-editor",
+          "18:30:03 777" : "Book project:js.html-editor",
+          "18:30:04 731" : "Release project:js.html-editor",
+          "18:30:05 433" : "Book project:js.html-editor",
+          "18:30:07 453" : "Release project:js.html-editor",
+          "18:30:08 155" : "Book project:js.html-editor",
+          "18:33:24 215" : "Release project:js.html-editor",
+          "18:33:25 692" : "Book project:js.html-editor",
+          "18:33:39 696" : "Release project:js.html-editor",
+          "18:33:40 262" : "Book project:js.html-editor",
+          "18:34:34 916" : "Release project:js.html-editor",
+          "18:34:41 077" : "Book project:js.html-editor",
+          "18:35:07 850" : "Release project:js.html-editor",
+          "18:35:09 028" : "Book project:js.html-editor",
+          "18:35:09 699" : "Release project:js.html-editor",
+          "18:35:10 376" : "Book project:js.html-editor",
+          "18:35:14 645" : "Release project:js.html-editor",
+          "18:35:24 078" : "Book project:js.html-editor",
+          "18:35:30 492" : "Release project:js.html-editor",
+          "18:35:30 954" : "Book project:js.html-editor",
+          "18:35:34 744" : "Release project:js.html-editor",
+          "18:36:18 702" : "Book project:js.html-editor",
+          "18:36:19 347" : "Release project:js.html-editor",
+          "18:36:23 455" : "Book project:js.html-editor",
+          "18:36:26 105" : "Book project:module.marketing",
+          "18:44:41 730" : "Release project:js.html-editor",
+          "18:52:53 661" : "Unbook project:app.digitaleo.com",
+          "18:52:54 361" : "Book project:app.digitaleo.com",
+          "19:14:06 457" : "Book project:js.html-editor",
+          "19:14:07 780" : "Release project:js.html-editor"
+        }
+      },
+      "2016-11" : {
+        "6" : {
+          "11:43:41 319" : "Book project:js.html-editor",
+          "11:43:48 654" : "Release project:js.html-editor",
+          "11:44:08 685" : "Book project:js.html-editor",
+          "12:10:31 913" : "Unbook project:module.marketing",
+          "12:10:34 598" : "Book project:module.marketing"
+        }
+      }
+    }
+  },
+  "projects" : {
+    "-KVpSZQYrEAKyZH4Cbnv" : {
+      "name" : "app.digitaleo.com",
+      "owner" : "aV8Zb0cybNXLzz0qNZsQm5FVSM43",
+      "queue" : [ {
+        "booked" : "23-11-2016 17:11:08 647",
+        "give" : "23-11-2016 17:11:08 647",
+        "uid" : "qh38zslVXndtN6eR3n1TjavgbwE3",
+        "user" : "greg.on.mac@gmail.com"
+      }, {
+        "booked" : "23-11-2016 18:52:54 362",
+        "uid" : "xdwpzUX28LO1aFs6GeXpHV1dJ1I2",
+        "user" : "gregonmac@gmail.com"
+      } ],
+      "type" : {
+        "class" : "fa-html5",
+        "label" : "IHM"
+      }
+    },
+    "-KW-UTDnywhcKjMy_-Rw" : {
+      "name" : "module.marketing",
+      "owner" : "aV8Zb0cybNXLzz0qNZsQm5FVSM43",
+      "queue" : [ {
+        "booked" : "23-11-2016 17:07:57 341",
+        "give" : "23-11-2016 17:16:06 119",
+        "uid" : "HKg83yaKQhf8kwehGU7Wlo4MYVI3",
+        "user" : "testor@gmail.com"
+      }, {
+        "booked" : "23-11-2016 17:10:51 721",
+        "uid" : "bQ63DhpI3oakTAF1tReRw9x4EDy1",
+        "user" : "greg.onmac@gmail.com"
+      }, {
+        "booked" : "03-12-2016 12:10:34 599",
+        "uid" : "xdwpzUX28LO1aFs6GeXpHV1dJ1I2",
+        "user" : "gregonmac@gmail.com"
+      } ],
+      "type" : {
+        "class" : "fa-html5",
+        "label" : "IHM"
+      }
+    },
+    "-KW-k1DjXu4E_UVsYjNZ" : {
+      "name" : "js.digitaleo-toolkit",
+      "owner" : "H0IBoRYmMcRlQWcdrUaYBknTnLQ2",
+      "queue" : [ {
+        "booked" : "23-11-2016 17:52:47 669",
+        "give" : "23-11-2016 17:52:47 669",
+        "uid" : "xdwpzUX28LO1aFs6GeXpHV1dJ1I2",
+        "user" : "gregonmac@gmail.com"
+      } ],
+      "type" : {
+        "class" : "fa-jsfiddle",
+        "label" : "JS"
+      }
+    },
+    "-KW-k220sVLwHgSBkyso" : {
+      "name" : "js.html-editor",
+      "owner" : "H0IBoRYmMcRlQWcdrUaYBknTnLQ2",
+      "queue" : [ {
+        "booked" : "03-12-2016 11:44:08 689",
+        "give" : "03-12-2016 11:44:08 689",
+        "uid" : "xdwpzUX28LO1aFs6GeXpHV1dJ1I2",
+        "user" : "gregonmac@gmail.com"
+      } ],
+      "type" : {
+        "class" : "fa-jsfiddle",
+        "label" : "JS"
+      }
+    },
+    "-KW-k2eq_VvdE_E57zm4" : {
+      "name" : "api.messengeo.net",
+      "owner" : "H0IBoRYmMcRlQWcdrUaYBknTnLQ2",
+      "queue" : [ {
+        "booked" : "23-11-2016 17:11:09 268",
+        "give" : "23-11-2016 17:11:09 268",
+        "uid" : "qh38zslVXndtN6eR3n1TjavgbwE3",
+        "user" : "greg.on.mac@gmail.com"
+      }, {
+        "booked" : "23-11-2016 17:12:49 103",
+        "uid" : "xdwpzUX28LO1aFs6GeXpHV1dJ1I2",
+        "user" : "gregonmac@gmail.com"
+      } ],
+      "type" : {
+        "class" : "fa-cogs",
+        "label" : "API"
+      }
+    },
+    "-KWIQ8NFaSeddYJQ7Psq" : {
+      "name" : "js.digitaleo-resources",
+      "owner" : "aV8Zb0cybNXLzz0qNZsQm5FVSM43",
+      "queue" : [ {
+        "booked" : "23-11-2016 17:07:57 901",
+        "give" : "23-11-2016 17:07:57 902",
+        "uid" : "HKg83yaKQhf8kwehGU7Wlo4MYVI3",
+        "user" : "testor@gmail.com"
+      }, {
+        "booked" : "23-11-2016 17:10:53 518",
+        "uid" : "bQ63DhpI3oakTAF1tReRw9x4EDy1",
+        "user" : "greg.onmac@gmail.com"
+      }, {
+        "booked" : "23-11-2016 17:11:06 227",
+        "uid" : "qh38zslVXndtN6eR3n1TjavgbwE3",
+        "user" : "greg.on.mac@gmail.com"
+      }, {
+        "booked" : "23-11-2016 18:22:10 218",
+        "uid" : "xdwpzUX28LO1aFs6GeXpHV1dJ1I2",
+        "user" : "gregonmac@gmail.com"
+      } ],
+      "type" : {
+        "class" : "fa-jsfiddle",
+        "label" : "JS"
+      }
+    }
+  },
+  "users" : {
+    "xdwpzUX28LO1aFs6GeXpHV1dJ1I2" : {
+      "-KW-UTDnywhcKjMy_-Rw" : "23-11-2016 18:36:26 106"
+    }
+  }
+}

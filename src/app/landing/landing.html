@@ -1,0 +1,26 @@
+<div class="container"
+     ng-controller="landing as vm">
+  <div class="starter-template">
+    <h1>
+      <i class="fa fa-book"></i>
+      Booking
+    </h1>
+    <p class="lead">Gestion des MEPs des projets Digitaleo</p>
+    <div ng-if="vm.isLoggedIn()">
+      <img title={{vm.keyword}}
+           ng-src="{{vm.giphy.image_url}}"
+           ng-style="{width:vm.giphy.image_width,height:vm.giphy.image_height}">
+    </div>
+
+    <div ng-if="!vm.isLoggedIn()">
+      <a class="btn btn-lg btn-primary"
+         href="#/register"
+         role="button">Nouveau sur booking
+      </a>
+      <a class="btn btn-lg btn-primary"
+         href="#/login"
+         role="button">Deja client
+      </a>
+    </div>
+  </div>
+</div>

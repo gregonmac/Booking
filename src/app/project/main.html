@@ -1,0 +1,91 @@
+<div class="row">
+  <div class="col-md-6">
+
+    <H3>Nouveau projet</H3>
+    <form ng-submit="vm.addProject()"
+          class="form-inline party-form">
+      <div class="form-group">
+        <input ng-model="vm.newProject.name"
+               type="text"
+               class="form-control"
+               placeholder="Name"
+               required>
+      </div>
+      <div class="form-group">
+        <select class="form-control"
+                ng-options="item as item.label for item in vm.types"
+                ng-model="vm.newProject.type"></select>
+      </div>
+      <button type="submit"
+              class="btn btn-primary">Add project
+      </button>
+    </form>
+  </div>
+  <div class="col-md-6">
+    <H3>Import projet</H3>
+    <form ng-submit="vm.importProjects()"
+          class="form-inline party-form">
+      <div class="form-group">
+    <textarea ng-model="vm.import"
+              class="form-control"
+              required></textarea>
+      </div>
+      <button type="submit"
+              class="btn btn-primary">Add project
+      </button>
+    </form>
+  </div>
+
+</div>
+<H3>Projet existant</H3>
+<table class="table table-striped table-bordered">
+  <thead>
+  <tr>
+    <th>Projet</th>
+    <th>Type</th>
+    <th>Icon</th>
+    <th>Action</th>
+  </tr>
+  </thead>
+  <tr ng-repeat="project in vm.projects">
+    <td>
+      </div>
+      <div>
+        <input type="text"
+               ng-model="project.name">
+      </div>
+    </td>
+    <td>
+      <div>
+        <select class="form-control"
+                ng-options="item as item.label for item in vm.types"
+                ng-model="project.type"></select>
+      </div>
+    </td>
+    <td>
+      <div>
+        <i class="fa"
+           ng-class="project.type.class"></i>
+      </div>
+    </td>
+    <td>
+      <div class="btn-group"
+           role="group"
+           aria-label="...">
+        <button ng-click="vm.updateProject(project)"
+                class="btn btn-default"
+                title="Save">
+          <i class="fa fa-floppy-o"></i>
+
+        </button>
+        <button ng-click="vm.removeProject(project)"
+                class="btn btn-danger"
+                title="Remove">
+          <i class="fa fa-trash-o"></i>
+
+        </button>
+      </div>
+
+    </td>
+  </tr>
+</table>
