@@ -1,67 +1,163 @@
-# Wait and Eat
+# Booking
+Manage project booking for a dev team
 
-This is the most recent version of the demo app for [The Angular Course](https://www.angularcourse.com).
+This project contain 
+- a RESTFull API to manage project, user, project booking and booking stats
+- a GUI 
+ - accessible via google connect oauth
+   - with optional limitation on email domain 
+ - for user
+   - to book/cancel booking of project
+ - for an administrator to create/update/delete
+   - project
+    - user
 
-Wait and Eat replaces paper waiting lists at restaurants.
+---
+# The RestFull API
+the api will be accessible via the URN 
+<pre>api/</pre>
+---
+## User Resource
+```javascript
+{
+  ObjectId:507f1f77bcf86cd799439011,
+  lastName:"JOBS",
+  firstName:"Steeve",
+  team:"Pixar"
+}
+```
+### Reading
+#### Return a bunch of users, 
+limited to 10, the header contain the url to get the next bunch.
+<pre>[GET] api/user</pre>
+#### Return the detail of a specific user.
+<pre>[GET] api/user/:id</pre>
+####Search a bunch of users, 
+limited to 10, filtered by a search value, the header contain the url to get the next bunch.
+<pre>[GET] api/user/search/:search</pre>
+####Return the global statistic about a specific user 
+on a specific period between **start** date and **end** date.
+<pre>[GET] api/user/:id/stats/:start/:end</pre>
+```javascript
+{
+  nbProjectBookingDemand:12, // Number of project booked by user
+  nbProjectBooked:8, // Number of project booked and obtained by user
+  averageBookedTime:35, // Average time during a project will be block by user
+  averageWaitedTime:72 // Average time waited by the user to obtain the booking
+}
+```
+### Writing
+#### Adding a new user.
+<pre>[POST] api/user</pre>
+Body 
+```javascript
+{
+  lastName:"GATES",
+  firstName:"Bill",
+  team:"Legocity"
+}
+```
+#### Update completely a user.
+<pre>[PUT] api/user/:id</pre>
+Body 
+```javascript
+{
+  lastName:"GATES",
+  firstName:"Bill",
+  team:"Lego-city"
+}
+```
+#### Update partialy a user.
+<pre>[PATCH] api/user/:id</pre>
+Body 
+```javascript
+{
+  team:"Lego-city"
+}
+```
+### Deleting
+####Delete a specific user
+<pre>[DELETE] api/user/:id</pre>
+---
 
-If you eat at restaurants a lot, you'll love the app because instead of waiting around
-for your name to be called, you'll just get a text message when a table opens up.
+## Project Resource
+```javascript
+{
+  ObjectId:507f1f77bcf86cd799439012,
+  name:"project1",
+  tags:["GUI","pixar","JS","mongo"]
+}
+```
+### Reading
+#### Return a bunch of projects, 
+limited to 10, the header contain the url to get the next bunch.
+<pre>[GET] api/project</pre>
 
-If you own a restaurant, you'll love the app because it makes managing waiting lists really easy,
-reduces no shows, and creates happier customers that are more likely to come back.
+#### Return the detail of a specific project.
+<pre>[GET] api/project/:id</pre>
 
-The app uses these technologies:
+#### Search a bunch of projects, 
+limited to 10, filtered by a search value (name, tags), the header contain the url to get the next bunch.
+<pre>[GET] api/project/search/:search</pre>
 
-* AngularJS 1.5.x
-* Firebase 3.0.x
-* AngularFire 2.0.x
-* Bootstrap 3.3.x
+#### Return the global statistic about a specific project 
+on a specific period between **start** date and **end** date.
+<pre>[GET] api/project/:id/stats/:start/:end</pre>
+```javascript
+{
+  nbBooked:8, // How many  the project has been booked and obtained by user
+  averageBookedTime:35, // Average time during a project will be block by user
+  averageWaitedTime:72 // Average time waited by the user to obtain the booking
+}
+```
 
-## Getting started
+### Writing
+#### Adding a new project.
+<pre>[POST] api/project</pre>
+Body 
+```javascript
+{
+  name:"project2",
+  tags:["GUI","pixar","JS","mongo"]
+}
+```
 
-The easiest way to get the code is to download it as a zip file. If you're familiar with Git and Github, you can also clone the repository.
+#### Update completely a project.
+<pre>[PUT] api/project/:id</pre>
+Body 
+```javascript
+{
+  name:"project3",
+  tags:["API","legocity","JS","mongo"]
+}
+```
 
-## Run the application
+#### Update partialy a project.
+<pre>[PATCH] api/project/:id</pre>
+Body 
+```javascript
+{
+  tags:["GUI","legocity","JS","Mysql"]
+}
+```
 
-1. You can use any server you like, but I prefer Python 2's built-in server for its simplicity.
-Navigate to the /src folder and enter, `python -m SimpleHTTPServer`, in your terminal.
-3. Now browse to the app at `http://localhost:8000`.
-4. Replace the Firebase config object in index.html with your own Firebase app data.
-5. Log in to your Firebase account and paste the content from `security_rules.json` into the Firebase rules section for your app.
-6. Run the sample Node server by visiting `https://hyperdev.com/#!/project/ribbon-hunter` and creating a HyperDev account.
-7. Hit the `Remix` button and then **make the project private by clicking the project name > Advanced options > Make private**.
-8. Fill in the Twilio, Mailgun, and Firebase config variables, and follow the directions on 
-`https://firebase.google.com/docs/server/setup#initialize_the_sdk` to connect the server to Firebase.
- 
+### Deleting
+#### Delete a specific project
+<pre>[DELETE] api/project/:id</pre>
 
-## Style and structure
+## Booking system
+### Add a user in a specific project queue (Book a project for a user)
+<pre>[POST] api/project/:id/queue</pre>
+Body 
+```javascript
+{
+  user:507f1f77bcf86cd799439065
+}
+```
 
-This app is a great resource if you want to learn the latest best practices for
-AngularJS code style and application structure.
+### Remove a user in a specific project queue (Cancel booking demand)
+<pre>[DELETE] api/project/:id/queue/:id</pre>
 
-That's because it follows [John Papa's AngularJS style guide](https://github.com/johnpapa/angular-styleguide),
-which is the style guide recommended by the AngularJS core team.
 
-## What you'll learn
 
-The main thing you'll learn is how to build and structure a large Angular app that
-works with remote data, user authentication, and has all the major Angular features such as:
 
-* Controllers
-* Services
-* Directives
-
-By reading and experimenting with the code, you'll also learn how to:
-
-* Create separate modules for each feature.
-* Create controllers that use services for most of the work.
-* Safely inject dependencies that work after minification.
-* Use `promises` to get data from a server.
-* Use `resolve` in your routes to get data before your controllers run.
-* Use `controllerAs` view syntax instead of $scope.
-* Use `controllerAs` with `vm` instead of using `this`.
-* Use `bindToController` in directives.
-
-## Contact
-
-gordon@watchandcode.com.
